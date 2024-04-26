@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Device Control</title>
+</head>
+<body>
+    <h1>Control Panel</h1>
+    <form method="post" action="/send">
+        <label for="command">Command:</label>
+        <select name="command" id="command">
+            <option value="LED">LED</option>
+            <option value="Humidity">Humidity</option>
+        </select>
+        <button type="submit">Send</button>
+    </form>
+    <p>{{ message }}</p>
+    <p>Received data: {{ response }}</p>
+</body>
+</html>
